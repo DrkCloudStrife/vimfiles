@@ -4,6 +4,8 @@ This is config that works for me, if you find things you like, help yourself. If
 This is extremely well start configuration if you use ruby, rspec, cucumber, javascript, coffeescript and backbone.
 Also Haml and Sass.
 
+    $ git clone git@github.com:DrkCloudStrife/vimfiles.git ~/.vim
+
 ## Warning: Submodules
 
 If you pull, this is what you should do
