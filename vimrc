@@ -60,8 +60,8 @@ noremap <Leader>vs :RVspec <CR>
 noremap <Leader>rf :Rfind 
 nnoremap <silent> <Leader>b :BuffergatorOpen<CR>
 nnoremap <silent> <Leader>B :BuffergatorClose<CR>
-nnoremap <silent> <Leader>tt :BuffergatorTabsOpen<CR>
-nnoremap <silent> <Leader>TT :BuffergatorTabsClose<CR>
+nnoremap <silent> <Leader>bt :BuffergatorTabsOpen<CR>
+nnoremap <silent> <Leader>BT :BuffergatorTabsClose<CR>
 
 noremap <Leader>term :ConqueTerm zsh <CR>
 
