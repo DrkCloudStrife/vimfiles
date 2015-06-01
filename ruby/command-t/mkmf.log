@@ -1,9 +1,185 @@
-have_header: checking for ruby.h... -------------------- yes
+find_header: checking for float.h... -------------------- yes
 
-"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE     -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    conftest.c -o conftest.i"
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.1.5/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
 checked program was:
 /* begin */
-1: #include <ruby.h>
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <float.h>
+/* end */
+
+--------------------
+
+find_header: checking for ruby.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+/* end */
+
+--------------------
+
+find_header: checking for stdlib.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdlib.h>
+/* end */
+
+--------------------
+
+find_header: checking for string.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <string.h>
+/* end */
+
+--------------------
+
+have_header: checking for fcntl.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <fcntl.h>
+/* end */
+
+--------------------
+
+have_header: checking for stdint.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/errno.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/errno.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/socket.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/socket.h>
+/* end */
+
+--------------------
+
+have_header: checking for ruby/st.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/st.h>
+/* end */
+
+--------------------
+
+have_header: checking for st.h... -------------------- yes
+
+"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+In file included from conftest.c:3:
+/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward/st.h:2:2: warning: use "ruby/st.h" instead of bare "st.h" [-W#warnings]
+#warning use "ruby/st.h" instead of bare "st.h"
+ ^
+1 warning generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <st.h>
+/* end */
+
+--------------------
+
+have_library: checking for pthread_create() in -lpthread... -------------------- yes
+
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.1.5/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lpthread  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'pthread_create'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.1.5/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lpthread  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'pthread_create' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { pthread_create(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { pthread_create(); return 0; }
 /* end */
 
 --------------------
