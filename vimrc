@@ -76,4 +76,4 @@ function! StripWhiteSpace ()
     call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhiteSpace ()<CR>
-au BufWrite *.rb,*.coffee :call StripWhiteSpace()
+au BufWrite *.rb,*.coffee,*.scss :call StripWhiteSpace()
