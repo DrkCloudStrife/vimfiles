@@ -6,6 +6,12 @@ Also Haml and Sass.
 
     $ git clone git@github.com:DrkCloudStrife/vimfiles.git ~/.vim
 
+## Preferred font
+
+I like using Anonymous Pro font which works great in shell and designed for code :)
+
+http://www.marksimonson.com/fonts/view/anonymous-pro
+
 ## Warning: Submodules
 
 If you pull, this is what you should do
