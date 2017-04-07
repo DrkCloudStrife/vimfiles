@@ -82,3 +82,6 @@
 [submodule "bundle/cpp-syntax"]
 	path = bundle/cpp-syntax
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/papercolor-theme"]
+	path = bundle/papercolor-theme
+	url = git@github.com:NLKNguyen/papercolor-theme.git

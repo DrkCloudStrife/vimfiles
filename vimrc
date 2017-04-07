@@ -8,6 +8,7 @@ set foldlevel=1
 set nocompatible
 set nowrap
 set guifont=Anonymous\ Pro:h18
+set t_Co=256
 colorscheme darkZ
 
 set autoindent
