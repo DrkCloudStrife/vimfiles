@@ -79,3 +79,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/cpp-syntax"]
+	path = bundle/cpp-syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
