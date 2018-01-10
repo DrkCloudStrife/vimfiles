@@ -1,7 +1,6 @@
 find_header: checking for float.h... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.1.5/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
-ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+"clang -o conftest -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/usr/local/Cellar/ruby/2.5.0/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib -L. -fstack-protector -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib     -lruby.2.5.0  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -12,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -24,7 +23,7 @@ checked program was:
 
 find_header: checking for ruby.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -36,7 +35,7 @@ checked program was:
 
 find_header: checking for stdlib.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -48,7 +47,7 @@ checked program was:
 
 find_header: checking for string.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -60,7 +59,7 @@ checked program was:
 
 have_header: checking for fcntl.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -72,7 +71,7 @@ checked program was:
 
 have_header: checking for stdint.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -84,7 +83,7 @@ checked program was:
 
 have_header: checking for sys/errno.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -96,7 +95,7 @@ checked program was:
 
 have_header: checking for sys/socket.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -108,7 +107,7 @@ checked program was:
 
 have_header: checking for ruby/st.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -120,9 +119,9 @@ checked program was:
 
 have_header: checking for st.h... -------------------- yes
 
-"gcc -E -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe  conftest.c -o conftest.i"
 In file included from conftest.c:3:
-/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward/st.h:2:2: warning: use "ruby/st.h" instead of bare "st.h" [-W#warnings]
+/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward/st.h:2:2: warning: use "ruby/st.h" instead of bare "st.h" [-W#warnings]
 #warning use "ruby/st.h" instead of bare "st.h"
  ^
 1 warning generated.
@@ -137,9 +136,9 @@ checked program was:
 
 have_library: checking for pthread_create() in -lpthread... -------------------- yes
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.1.5/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lpthread  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/usr/local/Cellar/ruby/2.5.0/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib -L. -fstack-protector -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib     -lruby.2.5.0 -lpthread  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'pthread_create'
-int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return 0; }
+int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return !p; }
                                                         ^
 1 error generated.
 checked program was:
@@ -156,15 +155,10 @@ checked program was:
 10: 
 11:   return 0;
 12: }
-13: int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return 0; }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/x86_64-darwin14.0 -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0/ruby/backward -I/usr/local/rvm/rubies/ruby-2.1.5/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/usr/local/rvm/rubies/ruby-2.1.5/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lpthread  -lpthread -ldl -lobjc "
-conftest.c:13:15: warning: implicit declaration of function 'pthread_create' is invalid in C99 [-Wimplicit-function-declaration]
-int t(void) { pthread_create(); return 0; }
-              ^
-1 warning generated.
-ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+"clang -o conftest -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/x86_64-darwin17 -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0/ruby/backward -I/usr/local/Cellar/ruby/2.5.0/include/ruby-2.5.0 -I.  -I/usr/local/opt/libyaml/include -I/usr/local/opt/openssl/include -I/usr/local/opt/readline/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/usr/local/Cellar/ruby/2.5.0/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib -L. -fstack-protector -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib     -lruby.2.5.0 -lpthread  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -179,7 +173,8 @@ checked program was:
 10: 
 11:   return 0;
 12: }
-13: int t(void) { pthread_create(); return 0; }
+13: extern void pthread_create();
+14: int t(void) { pthread_create(); return 0; }
 /* end */
 
 --------------------
