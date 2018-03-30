@@ -91,3 +91,6 @@
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/command-t.git
