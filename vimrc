@@ -1,4 +1,5 @@
-set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**,public/course-data/**,public/system/**,public/api/v1/system/**,data/**,.DS_Store
+set wildignore=*/app/assets/images/*,*/log/*,*/tmp/*,*/public/assets/*,*/public/course-data/*,*/public/system/*,*/public/api/v1/system/*,*/data/*,.DS_Store
+set wildignore+=*.png,*.jpg,*.gif,*.jpeg
 let g:CommandTMaxFiles=80085
 let g:buffergator_suppress_keymaps=1
 let g:ack_default_options = " -s -H --nocolor --nogroup --column --ignore-dir=data --ignore-dir=log --ignore-dir=tmp"
