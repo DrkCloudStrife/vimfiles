@@ -46,6 +46,8 @@
 [submodule "bundle/vimOutliner"]
 	path = bundle/vimOutliner
 	url = git://github.com/vim-scripts/VimOutliner.git
+	path = bundle/vimoutliner
+	url = git@github.com:vimoutliner/vimoutliner.git
 [submodule "bundle/vim-jst"]
 	path = bundle/vim-jst
 	url = git://github.com/briancollins/vim-jst.git
