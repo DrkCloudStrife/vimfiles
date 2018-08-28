@@ -20,7 +20,7 @@ set nobackup
 set noswapfile
 set clipboard=unnamed
 
-filetype off 
+filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
@@ -42,7 +42,7 @@ let no_otl_insert_maps=0
 let mapleader=','
 
 nnoremap ; :
-noremap <leader>t :CommandT<CR>  
+noremap <leader>t :CommandT<CR>
 noremap <leader>sd :NERDTree<CR>
 noremap <leader>sf :Sex<CR>
 nmap <silent> ,/ :let @/=""<CR>
@@ -55,18 +55,16 @@ map <CA-Down> <C-w><Down>
 nnoremap <leader>wr <Plug>VimroomToggle
 
 noremap <Leader>vm :RVmodel <CR>
-noremap <Leader>vc :RVcontroller <CR> 
+noremap <Leader>vc :RVcontroller <CR>
 noremap <Leader>vv :RVview <CR>
 noremap <Leader>vu :RVunittest <CR>
 noremap <Leader>vM :RVmigration <CR>
 noremap <Leader>vs :RVspec <CR>
-noremap <Leader>rf :Rfind 
+noremap <Leader>rf :Rfind
 nnoremap <silent> <Leader>b :BuffergatorOpen<CR>
 nnoremap <silent> <Leader>B :BuffergatorClose<CR>
 nnoremap <silent> <Leader>bt :BuffergatorTabsOpen<CR>
 nnoremap <silent> <Leader>BT :BuffergatorTabsClose<CR>
-
-noremap <Leader>term :ConqueTerm zsh <CR>
 
 " Strip trailing whitespace (,ss)
 function! StripWhiteSpace ()
