@@ -90,3 +90,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = https://github.com/posva/vim-vue
