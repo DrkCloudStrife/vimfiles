@@ -105,10 +105,12 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 command! PrettyXML call DoPrettyXML()
-noremap <leader>sxml :call DoPrettyXML()<CR>
 
 " Pretty JSON
 function! DoPrettyJSON()
   silent %!python2.7 -m json.tool
 endfunction
 command! PrettyJSON call DoPrettyJSON()
+
+" Pretty CSS
+command! PrettyCSS :%s/[{;}]/&\r/g|norm! =gg
